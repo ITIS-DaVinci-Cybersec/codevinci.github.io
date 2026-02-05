@@ -1,0 +1,57 @@
+{{- define "main" }}
+
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+    </header>
+
+    <div class="post-content">
+        <p>
+            We organize the <strong>CodeVinci CTF</strong>, an annual Jeopardy-style competition open to everyone.
+        </p>
+
+        {{- with site.Data.events.upcoming }}
+        {{- range . }}
+        <h3>Next: {{ .name }}</h3>
+        <p>
+            <strong>{{ .date }}</strong> — <a href="{{ .url }}" target="_blank" rel="noopener">CTFtime</a>
+        </p>
+        {{- end }}
+        {{- end }}
+
+        <h3>Past Editions</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Participants</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{- with site.Data.events.past }}
+                {{- range sort . "date" "desc" }}
+                <tr>
+                    <td>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</td>
+                    <td>{{ .date }}</td>
+                    <td>{{ .participants }}+</td>
+                </tr>
+                {{- end }}
+                {{- else }}
+                <tr>
+                    <td colspan="3">No past events yet.</td>
+                </tr>
+                {{- end }}
+            </tbody>
+        </table>
+
+        <h3>Calendar</h3>
+        <p>
+            We play CTFs most weekends. See our schedule on <a href="https://ctftime.org/team/277093" target="_blank" rel="noopener">CTFtime</a>.
+        </p>
+
+        {{ .Content }}
+    </div>
+</article>
+
+{{- end }}

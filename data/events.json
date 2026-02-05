@@ -1,0 +1,18 @@
+{
+  "upcoming": [
+    {
+      "name": "CodeVinci CTF 2026",
+      "date": "2026-03-07",
+      "participants": "???",
+      "url": "https://ctftime.org/event/3101"
+    }
+  ],
+  "past": [
+    {
+      "name": "CodeVinci Beginner CTF 2025",
+      "date": "2025-03-29",
+      "participants": 1500,
+      "url": "https://ctftime.org/event/2738"
+    }
+  ]
+}

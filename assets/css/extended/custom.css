@@ -1,0 +1,114 @@
+/* 
+ * CodeVinci Custom CSS
+ * Override PaperMod defaults here
+ */
+
+/* Challenge info tables */
+article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+}
+
+article table th,
+article table td {
+    padding: 0.75em 1em;
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+article table th {
+    background-color: var(--code-bg);
+    font-weight: 600;
+}
+
+/* Challenge difficulty stars */
+.difficulty-easy { color: #4ade80; }
+.difficulty-medium { color: #facc15; }
+.difficulty-hard { color: #f87171; }
+
+/* Social icons hover effect */
+.social-icons a:hover svg {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
+/* Code blocks */
+.highlight {
+    border-radius: 8px;
+    margin: 1.5em 0;
+}
+
+.highlight pre {
+    padding: 1em;
+}
+
+/* Table of Contents */
+.toc {
+    background-color: var(--code-bg);
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+/* Blockquotes (challenge descriptions) */
+blockquote {
+    border-left: 4px solid var(--primary);
+    padding-left: 1em;
+    margin: 1.5em 0;
+    font-style: italic;
+    background-color: var(--code-bg);
+    padding: 1em;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Category/Tag badges */
+.post-tags a,
+.post-categories a {
+    background-color: var(--primary);
+    color: var(--theme);
+    padding: 0.25em 0.75em;
+    border-radius: 999px;
+    font-size: 0.85em;
+    text-decoration: none;
+    margin-right: 0.5em;
+}
+
+.post-tags a:hover,
+.post-categories a:hover {
+    opacity: 0.8;
+}
+
+/* Profile mode buttons */
+.button {
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Post navigation */
+.paginav {
+    border-radius: 8px;
+    margin-top: 2em;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    article table {
+        font-size: 0.9em;
+    }
+    
+    .toc {
+        display: none;
+    }
+}
+
+/* Profile image - blend with background */
+.profile .profile_inner img {
+    border-radius: 50%;
+    filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.8));
+}

@@ -1,0 +1,49 @@
+{{- define "main" }}
+
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+        {{- if .Description }}
+        <div class="post-description">{{ .Description }}</div>
+        {{- end }}
+    </header>
+
+    <div class="post-content">
+        <p>
+            We track our CTF participations on <a href="https://ctftime.org/team/277093" target="_blank" rel="noopener">CTFtime</a>.
+            {{- with site.Data.ctfs.stats.country_rank }} Currently ranked <strong>#{{ . }}</strong> in Italy.{{- end }}
+        </p>
+
+        <h3>Competitions</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Place</th>
+                    <th>Pts</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{- with site.Data.ctfs.competitions }}
+                {{- range sort . "date" "desc" }}
+                <tr>
+                    <td><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></td>
+                    <td>{{ .date }}</td>
+                    <td>{{ if le .position 3 }}<strong>#{{ .position }}</strong>{{ else }}#{{ .position }}{{ end }}</td>
+                    <td>{{ .points }}</td>
+                </tr>
+                {{- end }}
+                {{- else }}
+                <tr>
+                    <td colspan="4">No data yet.</td>
+                </tr>
+                {{- end }}
+            </tbody>
+        </table>
+
+        {{ .Content }}
+    </div>
+</article>
+
+{{- end }}
