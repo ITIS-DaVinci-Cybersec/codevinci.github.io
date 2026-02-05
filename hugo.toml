@@ -1,4 +1,4 @@
-baseURL = "https://www.codevinci.it"
+baseURL = "https://codevinci-github-io.vercel.app"
 title = "CodeVinci"
 theme = "PaperMod"
 enableRobotsTXT = true
