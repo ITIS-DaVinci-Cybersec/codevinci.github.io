@@ -8,10 +8,10 @@ tags:
 showToc: true
 TocOpen: false
 hidemeta: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
+ShowReadingTime: false
+ShowBreadCrumbs: false
+ShowPostNavLinks: false
+ShowWordCount: false
 ShowCodeCopyButtons: true
 
 author: "benjamin"
@@ -167,6 +167,6 @@ pascalCTF{1m4g1n3_N0t_Kn0w1n9_H34P...}
 - Then I re-allocated a chunk of size 0x70, which let me overwrite sensitive data and prep the payload for the win.
 - The overflow itself was just 39 bytes into the message field of C3, with the last 7 bytes being the corrupted size for the next chunk.
 
-## 🔗 References
+## References
 
 * [Heap Exploitation by ir0nstone](https://ir0nstone.gitbook.io/notes/binexp/heap)
