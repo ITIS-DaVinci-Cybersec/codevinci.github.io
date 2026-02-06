@@ -1,8 +1,8 @@
-# CodeVinci - CTF Writeups
+# CodeVinci Website
 
-🏴 A CTF team blog built with [Hugo](https://gohugo.io/) and [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
+A CTF team website built with [Hugo](https://gohugo.io/) and [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -22,7 +22,7 @@ hugo server -D
 # Open http://localhost:1313
 ```
 
-## 📝 Creating New Writeups
+## Creating New Writeups
 
 Use the writeup archetype for consistent formatting:
 
@@ -32,7 +32,7 @@ hugo new --kind writeup posts/ctf-name-challenge-name.md
 
 This creates a new writeup with all the necessary frontmatter.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -55,7 +55,7 @@ This creates a new writeup with all the necessary frontmatter.
 └── hugo.toml           # Site configuration
 ```
 
-## ✏️ Writeup Format
+## Writeup Format
 
 Each writeup should include:
 
@@ -66,7 +66,7 @@ Each writeup should include:
 5. **Flag** - The captured flag
 6. **Lessons Learned** - Key takeaways
 
-## 🏷️ Categories & Tags
+## Categories & Tags
 
 ### Categories
 Use CTF names as categories (e.g., "HTB Cyber Apocalypse 2026")
@@ -76,7 +76,7 @@ Use CTF names as categories (e.g., "HTB Cyber Apocalypse 2026")
 - **Difficulty**: `easy`, `medium`, `hard`, `insane`
 - **Technique**: `sqli`, `xss`, `rop`, `rsa`, etc.
 
-## 🚀 Deployment
+## Deployment
 
 The site auto-deploys to GitHub Pages on push to `main` branch via GitHub Actions.
 
@@ -88,12 +88,12 @@ hugo --gc --minify
 
 Output is in the `public/` directory.
 
-## 📜 License
+## License
 
 - **Code**: MIT License
 - **Writeups**: CC BY-NC-SA 4.0
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repo
 2. Create your writeup branch (`git checkout -b writeup/ctf-challenge`)
@@ -104,4 +104,4 @@ Output is in the `public/` directory.
 
 ---
 
-*Happy hacking!* 🚀
+*Happy hacking!* 
