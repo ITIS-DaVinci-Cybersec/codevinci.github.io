@@ -1,0 +1,38 @@
+CUSTOM LICENSE AGREEMENT
+Repository: codevinci.github.io
+Copyright © 2026 Code Vinci. All Rights Reserved.
+
+This repository is subject to a dual-licensing model depending on the nature of the files contained herein. Please review the terms below carefully.
+
+--------------------------------------------------------------------------------
+
+1. SOFTWARE AND SOURCE CODE LICENSE
+Applicable to: Source code, scripts, markup, stylesheets (HTML, CSS, SCSS, JS), Jekyll/Hugo templates, and configuration files.
+
+These files are released under the MIT License.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+--------------------------------------------------------------------------------
+
+2. CONTENT AND INTELLECTUAL PROPERTY LICENSE
+Applicable to: Blog posts, articles, CTF (Capture The Flag) write-ups, tutorials, original graphics, logos, and personal media assets.
+
+All creative content within this repository is NOT covered by the MIT License. It is strictly licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
+
+Under this license, you are free to:
+• Share — copy and redistribute the material in any medium or format.
+
+Under the following mandatory terms:
+• Attribution — You must give appropriate credit to Code Vinci, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+• NonCommercial — You may not use the material for commercial purposes (including but not limited to monetization via ads, paywalls, or selling compiled guides).
+• NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified material.
+
+--------------------------------------------------------------------------------
+
+3. CONTACT AND PERMISSIONS
+Any use of the Content differing from the above terms (such as commercial publication or translation rights) requires prior written permission from the copyright holder. Please contact the repository owner via GitHub Issues or official channels for inquiries.
